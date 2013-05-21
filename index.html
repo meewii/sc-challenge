@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>SoundCloud Challenge: Creative Technologist</title>
+
+        <!-- For the CSS, I use a reset & set file: KNACSS (http://www.knacss.com/), made by Raphaël Goetter (Alsacreations.com)-->
+	    <link href="skin/knacss.css" rel="stylesheet" type="text/css" />
+		<!-- And the 960.gs grid -->
+	    <link href="skin/grid.css" rel="stylesheet" type="text/css" />
+	    <!-- Then my own CSS -->
+	    <link href="skin/styles.css" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,500,300' rel='stylesheet' type='text/css'>
+
+		
+    	<script src="js/jquery-1.9.1.min.js"></script>
+    	<!-- My favorite images slideshow slidesjs.com -->
+    	<script src="js/jquery.slides.min.js"></script>
+
+        <script src="//connect.soundcloud.com/sdk.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </head>
+    <body>
+        
+        
+
+		<!-- Main content -->
+        <div class="container container_12">
+        	<div class="grid_12"> 
+				<h1 class="sc-h1">SoundCloud Challenge: Creative Technologist</h1>
+			</div>
+        </div>
+		<div class="clear"></div>
+
+        <div class="container container_12 sc-results-container"> 
+	       
+	        <p class="grid_8 sc-logoff">Connect to SoundCloud to display your uploads</p>
+			<div class="grid_4 sc-logoff">
+				<a href="#" id="_connect" class="sc-connect"><img src="http://connect.soundcloud.com/2/btn-connect-sc-s.png" alt="Connect with SoundCloud" /></a>
+			</div>
+			<div class="clear"></div>
+			
+			<div id="_maincontent" style="display:none;">
+				<div class="grid_4 sc-user">
+					<span id="_userimg"></span>
+					<span id="_username"></span>
+				</div>
+				<div class="grid_7" id="_results">
+					<h3>Click on one of your tracks:</h3>
+					<ol class="sc-ol" id="_tracks"></ol>
+					<span id="_message"></span>
+				</div>
+				<div class="grid_1">
+					<a class="sc-btnstop" href="#" id="_btnstop">Stop</a>
+				</div>
+			</div>
+			 
+
+			<div class="clear"></div>
+		</div>
+
+		<div class="container container_12 sc-slider-container"> 
+			
+	        <div class="grid_12 sc-player">
+		        
+		        <!-- Slideshow -->
+		        <div id="_slides" class="sc-slider" style="display:none;">
+					<img src="img/img1.jpg" alt="Saint Seiya 1">
+					<img src="img/img2.jpg" alt="Saint Seiya 2">
+					<img src="img/img3.jpg" alt="Saint Seiya 3">
+					<img src="img/img4.jpg" alt="Saint Seiya 4">
+				</div>
+		
+				<!-- Waveform -->		
+				<div id="_waveform" class="sc-waveform"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		
+    </body>
+</html>
+

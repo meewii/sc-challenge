@@ -1,0 +1,102 @@
+/* General */
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background: #333 url(../img/bg.png) repeat; 
+}
+
+/* Title */
+h1.sc-h1 {
+	font-weight: 700;
+	text-shadow: 0 1px 0 #000;
+	color: #EEE;
+	margin: 20px 0 30px;
+}
+
+/* Main content */
+.sc-results-container, .sc-slider-container {
+	background-color: rgba(255, 255, 255, .8);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 10px 0;
+}
+.sc-results-container {
+	margin-bottom: 20px;
+}
+.sc-connect {
+	float: right;
+	color: #222;
+	font-weight: 700;
+}
+
+/* User infos */
+.sc-user {
+	background-color: #EEE;
+}
+
+.sc-user img {
+	float: left;
+	margin: 5px;
+	border: 4px solid #FFFFFF;
+}
+
+/* List of songs */
+.sc-ol {
+	padding: 0;
+	list-style-position:inside;
+	margin: 0;
+}
+li.sc-a {
+	text-decoration: underline;
+	cursor: pointer;
+}
+li.sc-a:hover {
+	color: #333;
+}
+.sc-btnstop {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	color: #333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #AAA;
+	text-shadow: 0 1px 0 #FFF;
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}	
+
+/* Slider */
+.sc-slider-container {
+	margin-bottom: 40px;	
+}
+
+.sc-slider {
+	z-index: 0;
+}
+
+/* Waveform */
+.sc-waveform {
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.sc-waveform img {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
